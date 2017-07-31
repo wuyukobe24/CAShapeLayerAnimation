@@ -15,6 +15,9 @@
 		F1EFCBF11F2F1ED7001D3AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1EFCBEF1F2F1ED7001D3AAB /* LaunchScreen.storyboard */; };
 		F1EFCBFC1F2F1ED7001D3AAB /* CAShapeLayerAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFCBFB1F2F1ED7001D3AAB /* CAShapeLayerAnimationTests.m */; };
 		F1EFCC071F2F1ED7001D3AAB /* CAShapeLayerAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFCC061F2F1ED7001D3AAB /* CAShapeLayerAnimationUITests.m */; };
+		F1EFCC161F2F1F8F001D3AAB /* SoundTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFCC151F2F1F8F001D3AAB /* SoundTimeView.m */; };
+		F1EFCC191F2F2034001D3AAB /* SoundBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFCC181F2F2034001D3AAB /* SoundBottomView.m */; };
+		F1EFCC1E1F2F235A001D3AAB /* NSString+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFCC1C1F2F235A001D3AAB /* NSString+UIColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,14 @@
 		F1EFCC021F2F1ED7001D3AAB /* CAShapeLayerAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAShapeLayerAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1EFCC061F2F1ED7001D3AAB /* CAShapeLayerAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerAnimationUITests.m; sourceTree = "<group>"; };
 		F1EFCC081F2F1ED7001D3AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1EFCC141F2F1F8F001D3AAB /* SoundTimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundTimeView.h; sourceTree = "<group>"; };
+		F1EFCC151F2F1F8F001D3AAB /* SoundTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundTimeView.m; sourceTree = "<group>"; };
+		F1EFCC171F2F2034001D3AAB /* SoundBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundBottomView.h; sourceTree = "<group>"; };
+		F1EFCC181F2F2034001D3AAB /* SoundBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundBottomView.m; sourceTree = "<group>"; };
+		F1EFCC1A1F2F21F3001D3AAB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F1EFCC1B1F2F2230001D3AAB /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		F1EFCC1C1F2F235A001D3AAB /* NSString+UIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UIColor.m"; sourceTree = "<group>"; };
+		F1EFCC1D1F2F235A001D3AAB /* NSString+UIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UIColor.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +116,14 @@
 				F1EFCBE51F2F1ED7001D3AAB /* AppDelegate.m */,
 				F1EFCBE71F2F1ED7001D3AAB /* ViewController.h */,
 				F1EFCBE81F2F1ED7001D3AAB /* ViewController.m */,
+				F1EFCC141F2F1F8F001D3AAB /* SoundTimeView.h */,
+				F1EFCC151F2F1F8F001D3AAB /* SoundTimeView.m */,
+				F1EFCC171F2F2034001D3AAB /* SoundBottomView.h */,
+				F1EFCC181F2F2034001D3AAB /* SoundBottomView.m */,
+				F1EFCC1D1F2F235A001D3AAB /* NSString+UIColor.h */,
+				F1EFCC1C1F2F235A001D3AAB /* NSString+UIColor.m */,
+				F1EFCC1A1F2F21F3001D3AAB /* PrefixHeader.pch */,
+				F1EFCC1B1F2F2230001D3AAB /* Header.h */,
 				F1EFCBEA1F2F1ED7001D3AAB /* Main.storyboard */,
 				F1EFCBED1F2F1ED7001D3AAB /* Assets.xcassets */,
 				F1EFCBEF1F2F1ED7001D3AAB /* LaunchScreen.storyboard */,
@@ -277,7 +296,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1EFCBE91F2F1ED7001D3AAB /* ViewController.m in Sources */,
+				F1EFCC161F2F1F8F001D3AAB /* SoundTimeView.m in Sources */,
 				F1EFCBE61F2F1ED7001D3AAB /* AppDelegate.m in Sources */,
+				F1EFCC1E1F2F235A001D3AAB /* NSString+UIColor.m in Sources */,
+				F1EFCC191F2F2034001D3AAB /* SoundBottomView.m in Sources */,
 				F1EFCBE31F2F1ED7001D3AAB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
