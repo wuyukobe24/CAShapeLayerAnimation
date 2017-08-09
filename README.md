@@ -38,7 +38,7 @@
      animation.repeatCount = HUGE_VALF;
      animation.removedOnCompletion = NO;
      [self.waveSinLayer addAnimation:animation forKey:@"positionWave"];
-     [self.waveCosLayer addAnimation:animation forKey:@"positionWave"];
+     [self.waveCosLayer addAnimation:animation forKey:@"positionWave"]; 
      
      }
     
