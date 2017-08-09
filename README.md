@@ -21,7 +21,9 @@
     _sineImageView.layer.mask = _waveSinLayer;
  
  //开始动画特效
-     
+ 
+     - (void)startLoading {
+    
       [_displayLink invalidate];
      self.displayLink = [CADisplayLink displayLinkWithTarget:self
                                                    selector:@selector(updateWave:)];
@@ -36,9 +38,8 @@
      animation.repeatCount = HUGE_VALF;
      animation.removedOnCompletion = NO;
      [self.waveSinLayer addAnimation:animation forKey:@"positionWave"];
-     [self.waveCosLayer addAnimation:animation forKey:@"positionWave"];
-     
-     
+     [self.waveCosLayer addAnimation:animation forKey:@"positionWave"];     
+     }
     
  波浪动画截图：
  
