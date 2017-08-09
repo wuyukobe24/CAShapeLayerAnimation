@@ -22,9 +22,9 @@
  
  //开始动画特效
  
-    - (void)startLoading {
+     - (void)startLoading {
     
-     [_displayLink invalidate];
+      [_displayLink invalidate];
      self.displayLink = [CADisplayLink displayLinkWithTarget:self
                                                    selector:@selector(updateWave:)];
      [_displayLink addToRunLoop:[NSRunLoop currentRunLoop]
@@ -38,9 +38,10 @@
      animation.repeatCount = HUGE_VALF;
      animation.removedOnCompletion = NO;
      [self.waveSinLayer addAnimation:animation forKey:@"positionWave"];
-     [self.waveCosLayer addAnimation:animation forKey:@"positionWave"];
-
-    
+     [self.waveCosLayer addAnimation:animation forKey:@"positionWave"];
+     
+     }
+    
  波浪动画截图：
  
 ![image](https://github.com/wuyukobe24/CAShapeLayerAnimation/blob/master/recordAnimation.png)
