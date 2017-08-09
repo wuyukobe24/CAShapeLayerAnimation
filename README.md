@@ -22,24 +22,24 @@
  
  //开始动画特效
  
- - (void)startLoading {
+    - (void)startLoading {
     
-    [_displayLink invalidate];
-    self.displayLink = [CADisplayLink displayLinkWithTarget:self
+     [_displayLink invalidate];
+     self.displayLink = [CADisplayLink displayLinkWithTarget:self
                                                    selector:@selector(updateWave:)];
-    [_displayLink addToRunLoop:[NSRunLoop currentRunLoop]
+     [_displayLink addToRunLoop:[NSRunLoop currentRunLoop]
                        forMode:NSRunLoopCommonModes];
-    CGPoint position = self.waveSinLayer.position;
-    position.y = position.y - imageView.bounds.size.height - 10;
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
-    animation.fromValue = [NSValue valueWithCGPoint:self.waveSinLayer.position];
-    animation.toValue = [NSValue valueWithCGPoint:position];
-    animation.duration = kWavePositionDuration;
-    animation.repeatCount = HUGE_VALF;
-    animation.removedOnCompletion = NO;
-    [self.waveSinLayer addAnimation:animation forKey:@"positionWave"];
-    [self.waveCosLayer addAnimation:animation forKey:@"positionWave"];
-}
+     CGPoint position = self.waveSinLayer.position;
+     position.y = position.y - imageView.bounds.size.height - 10;
+     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+     animation.fromValue = [NSValue valueWithCGPoint:self.waveSinLayer.position];
+     animation.toValue = [NSValue valueWithCGPoint:position];
+     animation.duration = kWavePositionDuration;
+     animation.repeatCount = HUGE_VALF;
+     animation.removedOnCompletion = NO;
+     [self.waveSinLayer addAnimation:animation forKey:@"positionWave"];
+     [self.waveCosLayer addAnimation:animation forKey:@"positionWave"];
+
     
  波浪动画截图：
  
