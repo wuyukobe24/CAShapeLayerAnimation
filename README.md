@@ -20,6 +20,7 @@
     
     _sineImageView.layer.mask = _waveSinLayer;
  ```
+ 
  ```
  //开始动画特效 
  - (void)startLoading {
