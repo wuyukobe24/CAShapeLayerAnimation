@@ -19,9 +19,8 @@
     [imageView addSubview:_sineImageView];
     
     _sineImageView.layer.mask = _waveSinLayer;
- ```
+
  
- ```
  //开始动画特效 
  - (void)startLoading {
     
@@ -42,7 +41,7 @@
        [self.waveCosLayer addAnimation:animation forKey:@"positionWave"]; 
      
  }
-  
+   ```
  波浪动画截图：
  
 ![image](https://github.com/wuyukobe24/CAShapeLayerAnimation/blob/master/recordAnimation.png)
