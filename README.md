@@ -42,7 +42,7 @@
        [self.waveCosLayer addAnimation:animation forKey:@"positionWave"]; 
      
  }
-  ```  
+  
  波浪动画截图：
  
 ![image](https://github.com/wuyukobe24/CAShapeLayerAnimation/blob/master/recordAnimation.png)
